@@ -12,18 +12,25 @@ VidaInicial= SuasInfo["hp"]
 print("As suas informações são:")
 mostra_ipmon(inspermons, Inicio)
 Insperdex= [SuasInfo]
-del inspermons[Inicio]
 outros=list(range(1,11))
-del outros[int(Inicio)-1]
 import random
 
 
 while True:
 	Menu= input("1. Agir \n2.Ver Pokédex \n3. Administrar pokémons \n4.Status do Pokémon Principal")
 	if Menu =="2":
-		print(Insperdex)
+		for a in range(len(Insperdex)):
+			print("{}:".format(a+1))
+			mostra_ipmon(Insperdex, a)
+	if Menu=="3":
+		print("Pokémons disponíveis:")
+		for i in range(len(Insperdex)):
+			print("{}:".format(i+1))
+			mostra_ipmon(Insperdex,i)
+		SeuPokemon= input("Selecione o Pokémon Principal:")
+		SuasInfo=Insperdex[int(SeuPokemon)-1]
 	if Menu == "4":
-		mostra_ipmon(Insperdex, 0)
+		mostra_ipmon(Insperdex, int(SeuPokemon)-1)
 	if Menu == "1":
 		Fazer= input("O que você quer fazer? \n 1.Passear \n    OU \n 2.Dormir? \n     OU \n 3.Ir para um PokéCenter \n Digite o número:")
 		if Fazer == "2":
@@ -40,6 +47,7 @@ while True:
 				continue
 		elif SuasInfo["hp"]>0:
 			adversario = str(random.choice(outros))
+			VidaAdversarioInicial= inspermons[adversario]["hp"]
 			print("Um inimigo quer batalhar...")
 			InfoAdversario= mostra_ipmon(inspermons,adversario)
 			Vontade= input("Digite N se deseja fugir da batalha, ou pressione Enter para continuar")
@@ -60,6 +68,7 @@ while True:
 						if inspermons[adversario] not in Insperdex:
 							Insperdex.append(inspermons[adversario])
 							print("Esse pokémon foi adicionado na sua pokédex.")
+							inspermons[adversario]["hp"]=VidaAdversarioInicial
 							break
 						break
 				
@@ -69,6 +78,7 @@ while True:
 					print("{} usou {}. Foi super efetivo!".format(Inimigo["nome"],Inimigo["Atk"][0]))
 					if SuasInfo["hp"]<=0:
 						print("Seu pokémon desmaiou, reviva ele no PokéCenter")
+						SuasInfo["hp"]=0
 						break
 		else:
 			print("Você nao pode batalhar com seu Pokémon desmaiado!")
