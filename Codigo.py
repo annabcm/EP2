@@ -1,5 +1,7 @@
 import json 
 import random
+import sys, time
+
 
 def mostra_ipmon(ipmon,a):
 	print("Nome = {0}".format(ipmon[a]["nome"]))
@@ -40,6 +42,12 @@ def batalha(inspermons, outros, SuasInfo, Insperdex):
 					print("\nSeu pokémon desmaiou, reviva ele no PokéCenter")
 					SuasInfo["hp"] = 0
 
+def printfala(texto):
+    for x in texto:
+        sys.stdout.write(x)
+        sys.stdout.flush()
+        time.sleep(0.01)
+    print
 with open('Insper.json') as arquivo: 
 	inspermons = json.load(arquivo) 
 
@@ -76,12 +84,13 @@ while True:
 		if Fazer=="4":
 			continue
 		elif Fazer == "3":
-			Desejo = input("Nurse Joy: Oi! Deseja reviver seu pokémon?  S/N ")
+			printfala("Nurse Joy: Oi! Deseja reviver seu pokémon?\n")
+			Desejo = input("S/N ")
 			if Desejo == "S" or Desejo == "s":
 				SuasInfo["hp"] = VidaInicial
-				print("\nA vida do seu pokémon foi restaurada!")
+				printfala("\nA vida do seu pokémon foi restaurada!")
 			if Desejo == "N" or Desejo == "n":
-				print("\nVolte sempre!")
+				printfala("\nVolte sempre!")
 		elif Fazer == "1" and SuasInfo["hp"] > 0:
 			batalha(inspermons, outros, SuasInfo, Insperdex)
 		else:
