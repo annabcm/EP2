@@ -33,7 +33,6 @@ def batalha(inspermons, outros, SuasInfo, Insperdex):
 						if inspermons[adversario] not in Insperdex:
 							Insperdex.append(inspermons[adversario])
 							print("Esse pokémon foi adicionado na sua pokédex.")
-							inspermons[adversario]["hp"] = VidaAdversarioInicial
 			else:
 				SuasInfo["hp"] = SuasInfo["hp"] - (Inimigo["Atk"][1]-SuasInfo["def"])
 				x += 1
@@ -41,7 +40,7 @@ def batalha(inspermons, outros, SuasInfo, Insperdex):
 				if SuasInfo["hp"] <= 0:
 					print("\nSeu pokémon desmaiou, reviva ele no PokéCenter")
 					SuasInfo["hp"] = 0
-
+		inspermons[adversario]["hp"] = VidaAdversarioInicial
 def printfala(texto):
     for x in texto:
         sys.stdout.write(x)
