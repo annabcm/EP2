@@ -1,5 +1,8 @@
 import json 
 import random
+import pickle
+import os.path
+
 
 #Função para mostrar os dados do seu Pokemón
 def mostra_ipmon(ipmon,a):
@@ -52,7 +55,7 @@ def batalha(inspermons, outros, SuasInfo, Insperdex,xp):
 					if Inimigo["hp"] <= 0:
 						print("\nVocê ganhou a batalha!\n")
 						xp = xp + 4
-						print ("Você adquiriou xp! Se você quiser saber mais sobre xp vá para o PokéCenter!")
+						print ("Você adquiriu o xp! Se você quiser saber mais sobre xp vá para o PokéCenter!")
 						if inspermons[adversario] not in Insperdex:
 							Insperdex.append(inspermons[adversario])
 							print("Esse pokémon foi adicionado na sua pokédex.")
@@ -102,21 +105,35 @@ def batalha(inspermons, outros, SuasInfo, Insperdex,xp):
 					SuasInfo["hp"] = 0
 					break
 					
-
 with open('Insper.json') as arquivo: 
 	inspermons = json.load(arquivo)
 
-
-Inicio = input("--------------------------------------\n  * Qual você escolhe para começar? *\n-------------------------------------- \n 1.Bullbasaur \n 2.Charmander \n 3.Squirtle \n Digite o número: ")
-SuasInfo = inspermons[Inicio]
+dados = os.path.isfile('salvadadosauto.dat')
+if dados == True:
+	continuar=input("Deseja continuar o jogo salvo?\n 	S/N \n")
+	if continuar=="S" or continuar =="s":
+		with open('salvadadosauto.dat', 'rb') as salvo:
+			Insperdex, SuasInfo, xp = pickle.load(salvo)
+	else:
+		os.remove('salvadadosauto.dat') 
+		Inicio = input("--------------------------------------\n  * Qual você escolhe para começar? *\n-------------------------------------- \n 1.Bullbasaur \n 2.Charmander \n 3.Squirtle \n Digite o número: ")
+		SuasInfo = inspermons[Inicio]
+		print("\nAs suas informações do seu pokemón são:")
+		mostra_ipmon(inspermons, Inicio)
+		Insperdex = [SuasInfo]
+		outros = list(range(1,11))
+		xp = 100
+else:
+	Inicio = input("--------------------------------------\n  * Qual você escolhe para começar? *\n-------------------------------------- \n 1.Bullbasaur \n 2.Charmander \n 3.Squirtle \n Digite o número: ")
+	SuasInfo = inspermons[Inicio]
+	print("\nAs suas informações do seu pokemón são:")
+	mostra_ipmon(inspermons, Inicio)
+	Insperdex = [SuasInfo]
+	outros = list(range(1,11))
+	xp = 100
 VidaInicial = SuasInfo["hp"]
-print("\nAs suas informações do seu pokemón são:")
-mostra_ipmon(inspermons, Inicio)
-Insperdex = [SuasInfo]
 outros = list(range(1,11))
-xp = 100
-
-
+	
 #Loop principal
 while True:
 	Menu = input("1.Agir \n2.Ver Pokédex \n3.Administrar pokémons \n4.Status do Pokémon Principal \n   Digite o número: ")
@@ -169,3 +186,5 @@ while True:
 		else:
 			print("Você não pode batalhar com seu Pokémon desmaiado!")
 	print("\n**********************************************************\n")
+with open('salvadadosauto.dat', 'wb') as salvo:
+    pickle.dump([Insperdex, SuasInfo, xp], salvo, protocol=2)
