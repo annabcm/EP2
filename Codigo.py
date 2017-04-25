@@ -4,7 +4,7 @@ import pickle
 import os.path
 
 
-#Função para mostrar os dados do seu Pokemón
+# Recebe um pokemón e imprime seus dados
 def mostra_ipmon(ipmon,a):
 	print("Nome = {0}".format(ipmon[a]["nome"]))
 	print("Atk = {}, {} damage".format(ipmon[a]["Atk"][0],ipmon[a]["Atk"][1]))
@@ -13,13 +13,14 @@ def mostra_ipmon(ipmon,a):
 	print("Health Points = {0}\n".format(ipmon[a]["hp"])) 
 
 
-# Função sorteia um número aleatório
+# Devolve um número aleatório entre 1 a 10
 def sorte():
 	luck = random.randint(0,10)
 	return luck
 
 
-#Função da batalha
+# Função de batalha
+# Recebe todos os pokemóns e seus dados e simula uma batalha
 def batalha(inspermons, outros, SuasInfo, Insperdex,xp):
 	adversario = str(random.choice(outros))
 	VidaAdversarioInicial = inspermons[adversario]["hp"]
@@ -36,7 +37,7 @@ def batalha(inspermons, outros, SuasInfo, Insperdex,xp):
 			
 			if x%2 == 0:
 				print("----------------------------\n  Placar:\n    Hp do seu pokémon: {}\n    Hp do inimigo: {}\n----------------------------\n".format(SuasInfo["hp"], Inimigo["hp"]))
-				TipodeAtk = input("Escolha o ataque que deseja usar: \n 1.{} \n 2.{}: \n".format(SuasInfo["Atk"][0],SuasInfo["Spc_Atk"][0]))
+				TipodeAtk = input("Escolha o ataque que deseja usar: \n 1.{} \n 2.{} \n".format(SuasInfo["Atk"][0],SuasInfo["Spc_Atk"][0]))
 				luck = sorte()
 				if TipodeAtk == "1": 
 					
@@ -104,10 +105,13 @@ def batalha(inspermons, outros, SuasInfo, Insperdex,xp):
 					print("\nVocê perdeu a batalha! Seu pokémon desmaiou, reviva ele no PokéCenter")
 					SuasInfo["hp"] = 0
 					break
-					
+
+
+# Carrega o arquivo .json					
 with open('Insper.json') as arquivo: 
 	inspermons = json.load(arquivo)
 
+# Rotina que salva o jogo
 dados = os.path.isfile('salvadadosauto.dat')
 if dados == True:
 	continuar=input("Deseja continuar o jogo salvo?\n 	S/N \n")
@@ -133,8 +137,9 @@ else:
 	xp = 100
 VidaInicial = SuasInfo["hp"]
 outros = list(range(1,11))
+
 	
-#Loop principal
+# Loop principal do jogo
 while True:
 	Menu = input("1.Agir \n2.Ver Pokédex \n3.Administrar pokémons \n4.Status do Pokémon Principal \n   Digite o número: ")
 	if Menu == "2":
@@ -177,14 +182,9 @@ while True:
 			v = batalha(inspermons, outros, SuasInfo, Insperdex, xp)
 			if v == "fuga":
 				continue
-		#elif Fazer == "5":
-		#	with open("InsperTrueddd.json", "w") as arquivo: 
-		#		json.dump(inspermons, arquivo)
-		#	with open("InsperTrue2.json", "w") as arquivo:
-		#		json.dump(Insperdex, arquivo)
-
 		else:
 			print("Você não pode batalhar com seu Pokémon desmaiado!")
 	print("\n**********************************************************\n")
+
 with open('salvadadosauto.dat', 'wb') as salvo:
     pickle.dump([Insperdex, SuasInfo, xp], salvo, protocol=2)
