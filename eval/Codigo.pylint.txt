@@ -1,0 +1,481 @@
+************* Module Codigo
+W:  7, 0: Cannot decode using encoding "ascii", unexpected byte at position 17 (invalid-encoded-data)
+W: 16, 0: Cannot decode using encoding "ascii", unexpected byte at position 14 (invalid-encoded-data)
+W: 22, 0: Cannot decode using encoding "ascii", unexpected byte at position 5 (invalid-encoded-data)
+W: 23, 0: Cannot decode using encoding "ascii", unexpected byte at position 23 (invalid-encoded-data)
+W: 31, 0: Cannot decode using encoding "ascii", unexpected byte at position 14 (invalid-encoded-data)
+W: 39, 0: Cannot decode using encoding "ascii", unexpected byte at position 69 (invalid-encoded-data)
+W: 46, 0: Cannot decode using encoding "ascii", unexpected byte at position 26 (invalid-encoded-data)
+W: 57, 0: Cannot decode using encoding "ascii", unexpected byte at position 18 (invalid-encoded-data)
+W: 59, 0: Cannot decode using encoding "ascii", unexpected byte at position 17 (invalid-encoded-data)
+W: 62, 0: Cannot decode using encoding "ascii", unexpected byte at position 22 (invalid-encoded-data)
+W: 69, 0: Cannot decode using encoding "ascii", unexpected byte at position 26 (invalid-encoded-data)
+W: 81, 0: Cannot decode using encoding "ascii", unexpected byte at position 18 (invalid-encoded-data)
+W: 83, 0: Cannot decode using encoding "ascii", unexpected byte at position 17 (invalid-encoded-data)
+W: 86, 0: Cannot decode using encoding "ascii", unexpected byte at position 22 (invalid-encoded-data)
+W: 94, 0: Cannot decode using encoding "ascii", unexpected byte at position 31 (invalid-encoded-data)
+W:105, 0: Cannot decode using encoding "ascii", unexpected byte at position 17 (invalid-encoded-data)
+W:123, 0: Cannot decode using encoding "ascii", unexpected byte at position 70 (invalid-encoded-data)
+W:125, 0: Cannot decode using encoding "ascii", unexpected byte at position 26 (invalid-encoded-data)
+W:131, 0: Cannot decode using encoding "ascii", unexpected byte at position 69 (invalid-encoded-data)
+W:133, 0: Cannot decode using encoding "ascii", unexpected byte at position 25 (invalid-encoded-data)
+W:144, 0: Cannot decode using encoding "ascii", unexpected byte at position 33 (invalid-encoded-data)
+W:150, 0: Cannot decode using encoding "ascii", unexpected byte at position 12 (invalid-encoded-data)
+W:154, 0: Cannot decode using encoding "ascii", unexpected byte at position 37 (invalid-encoded-data)
+W:159, 0: Cannot decode using encoding "ascii", unexpected byte at position 28 (invalid-encoded-data)
+W:162, 0: Cannot decode using encoding "ascii", unexpected byte at position 12 (invalid-encoded-data)
+W:167, 0: Cannot decode using encoding "ascii", unexpected byte at position 26 (invalid-encoded-data)
+W:168, 0: Cannot decode using encoding "ascii", unexpected byte at position 56 (invalid-encoded-data)
+W:171, 0: Cannot decode using encoding "ascii", unexpected byte at position 30 (invalid-encoded-data)
+W:172, 0: Cannot decode using encoding "ascii", unexpected byte at position 35 (invalid-encoded-data)
+W:174, 0: Cannot decode using encoding "ascii", unexpected byte at position 48 (invalid-encoded-data)
+W:176, 0: Cannot decode using encoding "ascii", unexpected byte at position 16 (invalid-encoded-data)
+W:186, 0: Cannot decode using encoding "ascii", unexpected byte at position 13 (invalid-encoded-data)
+C:  1, 0: Trailing whitespace (trailing-whitespace)
+C:  8, 0: Exactly one space required after comma
+def mostra_ipmon(ipmon,a):
+                      ^ (bad-whitespace)
+W:  9, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  9, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 10, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 10, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 10, 0: Exactly one space required after comma
+	print("Atk = {}, {} damage".format(ipmon[a]["Atk"][0],ipmon[a]["Atk"][1]))
+                                                      ^ (bad-whitespace)
+W: 11, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 11, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 11, 0: Exactly one space required after comma
+	print("Spc_Atk = {}, {} damage".format(ipmon[a]["Spc_Atk"][0],ipmon[a]["Spc_Atk"][1]))
+                                                              ^ (bad-whitespace)
+W: 12, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 12, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 13, 0: Trailing whitespace (trailing-whitespace)
+W: 13, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 13, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 18, 0: Exactly one space required after comma
+	luck = random.randint(0,10)
+                        ^ (bad-whitespace)
+W: 19, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 24, 0: Exactly one space required after comma
+def batalha(inspermons, outros, SuasInfo, Insperdex,xp):
+                                                   ^ (bad-whitespace)
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 27, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 28, 0: Exactly one space required after comma
+	InfoAdversario = mostra_ipmon(inspermons,adversario)
+                                         ^ (bad-whitespace)
+W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 30, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 31, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 31, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 32, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 33, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 34, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 35, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 37, 0: Trailing whitespace (trailing-whitespace)
+W: 38, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 39, 0: Line too long (173/100) (line-too-long)
+W: 39, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 39, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 40, 0: Line too long (127/100) (line-too-long)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 40, 0: Exactly one space required after comma
+				TipodeAtk = input("Escolha o ataque que deseja usar: \n 1.{} \n 2.{} \n".format(SuasInfo["Atk"][0],SuasInfo["Spc_Atk"][0]))
+                                                                                                      ^ (bad-whitespace)
+W: 41, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 42, 0: Trailing whitespace (trailing-whitespace)
+W: 42, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 43, 0: Trailing whitespace (trailing-whitespace)
+W: 44, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 45, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 46, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 46, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 47, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 48, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 49, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 50, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 50, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 50, 0: Exactly one space required after comma
+						print("\n{} usou {}. Foi efetivo!\n".format(SuasInfo["nome"],SuasInfo["Atk"][0]))
+                                                                  ^ (bad-whitespace)
+W: 51, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 52, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 53, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 54, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 54, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 54, 0: Exactly one space required after comma
+						print("\n{} usou {}. Foi super efetivo!\n".format(SuasInfo["nome"],SuasInfo["Atk"][0]))
+                                                                        ^ (bad-whitespace)
+W: 55, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 56, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 57, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 57, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 58, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 59, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 59, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 60, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 61, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 62, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 62, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 63, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 64, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 65, 0: Trailing whitespace (trailing-whitespace)
+W: 66, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 67, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 68, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 69, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 69, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 70, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 71, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 72, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 73, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 73, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 73, 0: Exactly one space required after comma
+						print("\n{} usou {}. Foi efetivo!\n".format(SuasInfo["nome"],SuasInfo["Spc_Atk"][0]))
+                                                                  ^ (bad-whitespace)
+W: 74, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 75, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 76, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 77, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 77, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 77, 0: Exactly one space required after comma
+						print("\n{} usou {}. Foi super efetivo!\n".format(SuasInfo["nome"],SuasInfo["Spc_Atk"][0]))
+                                                                        ^ (bad-whitespace)
+W: 78, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 79, 0: Trailing whitespace (trailing-whitespace)
+W: 80, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 81, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 81, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 82, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 83, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 83, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 84, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 85, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 86, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 86, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 87, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 88, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 89, 0: Trailing whitespace (trailing-whitespace)
+W: 90, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 91, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 92, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 93, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 94, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 94, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 95, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 96, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 97, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 98, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 98, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 98, 0: Exactly one space required after comma
+					print("\n{} usou {}. Foi efetivo!\n".format(Inimigo["nome"],Inimigo["Atk"][0]))
+                                                                ^ (bad-whitespace)
+W: 99, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:100, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:101, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:102, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:102, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C:102, 0: Exactly one space required after comma
+					print("\n{} usou {}. Foi super efetivo!\n".format(Inimigo["nome"],Inimigo["Atk"][0]))
+                                                                      ^ (bad-whitespace)
+W:103, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:104, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:105, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:105, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:106, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:107, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:110, 0: Trailing whitespace (trailing-whitespace)
+C:111, 0: Trailing whitespace (trailing-whitespace)
+W:112, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:117, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:117, 0: Exactly one space required around assignment
+	continuar=input("Deseja continuar o jogo salvo?\n 	S/N \n")
+          ^ (bad-whitespace)
+W:118, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:118, 0: Exactly one space required around comparison
+	if continuar=="S" or continuar =="s":
+             ^^ (bad-whitespace)
+C:118, 0: Exactly one space required after comparison
+	if continuar=="S" or continuar =="s":
+                                ^^ (bad-whitespace)
+W:119, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:120, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:121, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:122, 0: Trailing whitespace (trailing-whitespace)
+W:122, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:123, 0: Line too long (207/100) (line-too-long)
+W:123, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:124, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:125, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:125, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:126, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:127, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:128, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:128, 0: Exactly one space required after comma
+		outros = list(range(1,11))
+                       ^ (bad-whitespace)
+W:129, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:131, 0: Line too long (206/100) (line-too-long)
+W:131, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:132, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:133, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:133, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:134, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:135, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:136, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:136, 0: Exactly one space required after comma
+	outros = list(range(1,11))
+                      ^ (bad-whitespace)
+W:137, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:139, 0: Exactly one space required after comma
+outros = list(range(1,11))
+                     ^ (bad-whitespace)
+C:141, 0: Trailing whitespace (trailing-whitespace)
+C:144, 0: Line too long (123/100) (line-too-long)
+W:144, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:145, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:146, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:147, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:147, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:148, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:149, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:150, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:150, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:151, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:152, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:152, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:153, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:153, 0: Exactly one space required after comma
+			mostra_ipmon(Insperdex,i)
+                         ^ (bad-whitespace)
+W:154, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:155, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:156, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:157, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:158, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:159, 0: Line too long (130/100) (line-too-long)
+W:159, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:160, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:160, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:161, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:162, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:162, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:163, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:164, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:164, 0: Exactly one space required around comparison
+		if Fazer=="4":
+          ^^ (bad-whitespace)
+W:165, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:166, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:167, 0: Line too long (105/100) (line-too-long)
+W:167, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:167, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:168, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:169, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:170, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:171, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:171, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C:172, 0: Line too long (101/100) (line-too-long)
+W:172, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:173, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:174, 0: Line too long (183/100) (line-too-long)
+W:174, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:174, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:175, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:176, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:176, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:177, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:178, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:178, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C:179, 0: Trailing whitespace (trailing-whitespace)
+W:181, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:182, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:183, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:184, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:185, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:186, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:186, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W:187, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:187, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C:190, 0: Final newline missing (missing-final-newline)
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  8,23: Redefining name 'a' from outer scope (line 146) (redefined-outer-name)
+C:  8, 0: Invalid argument name "a" (invalid-name)
+C:  8, 0: Missing function docstring (missing-docstring)
+C: 17, 0: Missing function docstring (missing-docstring)
+W: 24,32: Redefining name 'SuasInfo' from outer scope (line 120) (redefined-outer-name)
+W: 24,24: Redefining name 'outros' from outer scope (line 128) (redefined-outer-name)
+W: 24,42: Redefining name 'Insperdex' from outer scope (line 120) (redefined-outer-name)
+W: 24,12: Redefining name 'inspermons' from outer scope (line 112) (redefined-outer-name)
+W: 24,52: Redefining name 'xp' from outer scope (line 120) (redefined-outer-name)
+C: 24, 0: Invalid argument name "SuasInfo" (invalid-name)
+C: 24, 0: Invalid argument name "Insperdex" (invalid-name)
+C: 24, 0: Invalid argument name "xp" (invalid-name)
+C: 24, 0: Missing function docstring (missing-docstring)
+C: 26, 1: Invalid variable name "VidaAdversarioInicial" (invalid-name)
+E: 28, 1: Assigning to function call which doesn't return (assignment-from-no-return)
+C: 28, 1: Invalid variable name "InfoAdversario" (invalid-name)
+C: 29, 1: Invalid variable name "Vontade" (invalid-name)
+C: 34, 2: Invalid variable name "Inimigo" (invalid-name)
+C: 35, 2: Invalid variable name "x" (invalid-name)
+C: 40, 4: Invalid variable name "TipodeAtk" (invalid-name)
+C: 47, 6: Invalid variable name "x" (invalid-name)
+C: 51, 6: Invalid variable name "x" (invalid-name)
+C: 55, 6: Invalid variable name "x" (invalid-name)
+R: 30, 1: Too many nested blocks (6/5) (too-many-nested-blocks)
+C: 70, 6: Invalid variable name "x" (invalid-name)
+C: 74, 6: Invalid variable name "x" (invalid-name)
+C: 78, 6: Invalid variable name "x" (invalid-name)
+R: 30, 1: Too many nested blocks (6/5) (too-many-nested-blocks)
+C: 95, 5: Invalid variable name "x" (invalid-name)
+C: 99, 5: Invalid variable name "x" (invalid-name)
+C:103, 5: Invalid variable name "x" (invalid-name)
+W: 28, 1: Unused variable 'InfoAdversario' (unused-variable)
+R: 24, 0: Too many branches (21/12) (too-many-branches)
+R: 24, 0: Too many statements (77/50) (too-many-statements)
+C:112, 1: Invalid constant name "inspermons" (invalid-name)
+C:115, 0: Invalid constant name "dados" (invalid-name)
+C:116, 3: Comparison to True should be just 'expr' or 'expr is True' (singleton-comparison)
+C:117, 1: Invalid constant name "continuar" (invalid-name)
+C:120, 3: Invalid constant name "Insperdex" (invalid-name)
+C:120,14: Invalid constant name "SuasInfo" (invalid-name)
+C:120,24: Invalid constant name "xp" (invalid-name)
+C:123, 2: Invalid constant name "Inicio" (invalid-name)
+C:124, 2: Invalid constant name "SuasInfo" (invalid-name)
+C:127, 2: Invalid constant name "Insperdex" (invalid-name)
+C:128, 2: Invalid constant name "outros" (invalid-name)
+C:129, 2: Invalid constant name "xp" (invalid-name)
+C:131, 1: Invalid constant name "Inicio" (invalid-name)
+C:132, 1: Invalid constant name "SuasInfo" (invalid-name)
+C:135, 1: Invalid constant name "Insperdex" (invalid-name)
+C:136, 1: Invalid constant name "outros" (invalid-name)
+C:137, 1: Invalid constant name "xp" (invalid-name)
+C:138, 0: Invalid constant name "VidaInicial" (invalid-name)
+C:139, 0: Invalid constant name "outros" (invalid-name)
+C:144, 1: Invalid constant name "Menu" (invalid-name)
+C:154, 2: Invalid constant name "SeuPokemon" (invalid-name)
+C:155, 2: Invalid constant name "SuasInfo" (invalid-name)
+C:159, 2: Invalid constant name "Fazer" (invalid-name)
+C:168, 3: Invalid constant name "Desejo" (invalid-name)
+C:172, 4: Invalid constant name "Desejo2" (invalid-name)
+C:182, 3: Invalid constant name "v" (invalid-name)
+
+
+Report
+======
+159 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |1          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |3      |3          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |165    |86.39 |165      |=          |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|comment   |7      |3.66  |7        |=          |
++----------+-------+------+---------+-----------+
+|empty     |19     |9.95  |19       |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |131    |131      |=          |
++-----------+-------+---------+-----------+
+|refactor   |4      |4        |=          |
++-----------+-------+---------+-----------+
+|warning    |187    |187      |=          |
++-----------+-------+---------+-----------+
+|error      |1      |1        |=          |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++--------------------------+------------+
+|message id                |occurrences |
++==========================+============+
+|mixed-indentation         |148         |
++--------------------------+------------+
+|invalid-name              |44          |
++--------------------------+------------+
+|superfluous-parens        |38          |
++--------------------------+------------+
+|invalid-encoded-data      |32          |
++--------------------------+------------+
+|bad-whitespace            |21          |
++--------------------------+------------+
+|trailing-whitespace       |13          |
++--------------------------+------------+
+|line-too-long             |9           |
++--------------------------+------------+
+|redefined-outer-name      |6           |
++--------------------------+------------+
+|missing-docstring         |4           |
++--------------------------+------------+
+|too-many-nested-blocks    |2           |
++--------------------------+------------+
+|unused-variable           |1           |
++--------------------------+------------+
+|too-many-statements       |1           |
++--------------------------+------------+
+|too-many-branches         |1           |
++--------------------------+------------+
+|singleton-comparison      |1           |
++--------------------------+------------+
+|missing-final-newline     |1           |
++--------------------------+------------+
+|assignment-from-no-return |1           |
++--------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at -10.57/10 (previous run: -10.57/10, +0.00)
+
